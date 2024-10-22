@@ -1,0 +1,87 @@
+.search {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.input-box {
+    position: relative;
+    display: flex;
+    max-width: 400px;
+    background: #fff;
+    margin: 1.2rem 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f4f2f2;
+    color: #646464;
+    padding: 0.7rem 1rem;
+    border: 1px solid black;
+    border-radius: 40px;
+    width: 100%;
+    height: 1.6em;
+    transition: all ease-in-out 0.5s;
+}
+
+.input-box i,
+.input-box .button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-box i {
+    left: 20px;
+    font-size: 30px;
+    color: #707070;
+}
+
+.input-box input {
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+}
+
+.input-box .button {
+    right: -1px;
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.input-box .button:active {
+    transform: translateY(-50%) scale(0.98);
+}
+
+/* Responsive */
+@media screen and (max-width: 500px) {
+    .input-box {
+        height: 1.6rem;
+        width: -webkit-fill-available;
+        margin: 1.2rem;
+    }
+
+    .input-box i {
+        left: 12px;
+        font-size: 25px;
+    }
+
+    .input-box input {
+        width: -webkit-fill-available;
+        padding: 8px 50px;
+    }
+
+    .input-box .button {
+        right: 12px;
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+}

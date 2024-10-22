@@ -1,0 +1,109 @@
+.sign {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/public/login_pic/kitchen.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.signup-container {
+    margin: 40px auto;
+    min-width: 350px;
+    animation: fadeIn 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.signup-container:hover {
+    transform: translateY(-5px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.signup-container h2 {
+    text-align: center;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.signup-form {
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.form-group input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid #333;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.error-message {
+    color: red;
+    margin-bottom: 5px;
+    transition: color 0.3s ease, margin-bottom 0.3s ease;
+    text-align: left;
+}
+
+.error {
+    color: red;
+    margin-top: 5px;
+    transition: color 0.3s ease, margin-top 0.3s ease;
+    text-align: left;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .signup-container {
+        max-width: 90%;
+    }
+}

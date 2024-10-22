@@ -1,0 +1,102 @@
+/* Login.css */
+
+/* Main container */
+.Login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 83vh;
+    background-image: url('/login_pic/kitchen.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.login_txt {
+    text-align: center;
+}
+
+/* Login container */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Login form */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+}
+
+/* Input fields */
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #007bff;
+}
+
+/* Error messages */
+.error-message {
+    margin-top: 0px;
+    font-size: 14px;
+    color: red;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+    text-align: left;
+}
+
+/* Button */
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Sign up link */
+.signup_btn {
+    margin-top: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.signup_btn a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.signup_btn a:hover {
+    color: #0056b3;
+}
